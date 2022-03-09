@@ -1,0 +1,235 @@
+/* || General style rules */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+  
+/* This as the class implies hide the lement visually */
+.hide-visually {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+}
+
+/* || Typography */
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 10px;
+    line-height: 1.5;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.section-pricegrid h2 {
+    font-size: 1.25rem;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.section-pricegrid .wrapper-community .sub-heading span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    line-height: initial;
+}
+
+.section-pricegrid .wrapper-community > p {
+    font-size: 1rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.section-pricegrid .wrapper-subscribe .heading span {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+}
+
+.section-pricegrid .wrapper-subscribe .price {
+    line-height: initial;
+}
+
+.section-pricegrid .wrapper-subscribe .price span:first-child {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 0.3em;
+}
+
+.section-pricegrid .wrapper-subscribe .price span:last-child {
+    font-size: 1rem;
+    color: hsl(203, 73%, 85%);
+}
+
+.section-pricegrid .wrapper-subscribe > p {
+    font-size: 1rem;
+}
+
+.section-pricegrid .wrapper-subscribe > a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.section-pricegrid .wrapper-whyus .heading span {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.section-pricegrid .wrapper-whyus > ul > li {
+    font-size: 0.875rem;
+    line-height: 1.3;
+}
+
+/* || Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section pricegrid */
+
+.section-pricegrid {
+    width: 83%;
+    max-width: 40em;
+    /* max-width: 63.5em; */
+    margin: 4.84em auto 5.5em;
+}
+
+.section-pricegrid .wrapper-community {
+    background-color: white;
+    padding: 1.35em 2.5em 2.15em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.section-pricegrid .wrapper-subscribe {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 2.5em;
+}
+
+.section-pricegrid .wrapper-subscribe .heading {
+    margin-bottom: 1.5em;
+}
+
+.section-pricegrid .wrapper-subscribe > p {
+    margin-top: 0.45em;
+}
+
+.section-pricegrid .wrapper-subscribe > a {
+    display: block;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 10%);
+    margin-top: 1.6em;
+}
+
+.section-pricegrid .wrapper-subscribe > a:link {
+    color: white;
+}
+
+.section-pricegrid .wrapper-subscribe > a:hover {
+    background-color: hsl(71, 70%, 62%);
+    transition: background-color 0.2s;
+}
+
+.section-pricegrid .wrapper-whyus {
+    background-color: hsl(179, 47%, 52%);
+    padding: 2.5em;
+    color: hsla(204, 43%, 93%, 85%);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.section-pricegrid .wrapper-whyus .heading {
+ margin-bottom: 2em;
+}
+.section-pricegrid .wrapper-whyus > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 47em) {
+    
+    /* || Typography */
+
+    .section-pricegrid h2 {
+        font-size: 1.56rem;
+    }
+
+    /* || Section pricegrid */
+
+    .section-pricegrid {
+        max-width: 63.5em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-pricegrid .wrapper-community {
+        flex: 1 1 100%;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    .section-pricegrid .wrapper-subscribe,
+    .section-pricegrid .wrapper-whyus {
+        flex: 1 1 50%;
+        padding: 4em;
+    }
+    
+    .section-pricegrid .wrapper-subscribe {
+        border-bottom-left-radius: 7px;
+    }
+    .section-pricegrid .wrapper-whyus {
+        border-bottom-left-radius: initial;
+        border-bottom-right-radius: 7px;
+    }
+}
+
+/* || Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
