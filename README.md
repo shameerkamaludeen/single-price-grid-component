@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/shameerkamaludeen/single-price-grid)
-- Live Site URL: [Click here](https://shameerkamaludeen.github.io/single-price-grid/)
+- Solution URL: [Click here](https://github.com/shameerkamaludeen/single-price-grid-component)
+- Live Site URL: [Click here](https://shameerkamaludeen.github.io/single-price-grid-component/)
 
 ## My process
 
